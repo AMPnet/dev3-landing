@@ -7,15 +7,34 @@
     <title>DΞV3 | web3 apps. web2 workflows.</title>
     <link rel="stylesheet" href="app.css">
     <link rel="icon" type="image/x-icon" href="./res/dev3-favicon.png">
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
 
 </head>
 <body id="main">
     <img id="logo-img" src="./res/dev3-logo.png" alt="">
-    <div id="text-holder">Enabling <b>Frontend</b> and <b>Mobile</b> devs to build complex, production-ready <b>web3</b> apps with ease.</div>
+    <div id="text-holder">Enabling <b>frontend</b> and <b>mobile</b> devs to build complex, production-ready <b>web3</b> apps with ease.</div>
     <a href="https://v3zku8ynnkv.typeform.com/to/b8UOtAlG" id="join-button">Join beta testing</a>
-    <img id="code-img" src="./res/hero-code.png" alt="">
+    <pre id="code-content"><code class="language-js">
+        const dev3 = require("dev3");
+
+        async function mintLoyalty(amount) {
+
+            const instance = dev3.initialize("MY_API_KEY")
+            const loyaltyToken = instance.getAllTokens().select("TOKEN.LOYALTY")
+
+            try {
+                loyaltyToken.requestMint(amount)
+            } catch(e) {
+                console.log("No permission to mint tokens")
+            }
+            
+        }
+    </code></pre>
+
 </body>
+
 </html>

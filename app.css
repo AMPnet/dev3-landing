@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
 
-* {
+html {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -34,16 +34,7 @@
     padding-top: 50px;
 }
 
-@media (max-width: 600px) {
 
-    #text-holder {
-        width: 80%;
-    }
-    
-    #code-img {
-        width: 90%;
-    }
-}
 
 #join-button {
     margin-left: auto;
@@ -65,4 +56,39 @@
 
 #join-button:hover {
     filter: brightness(65%);
+}
+
+#code-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+
+code {
+    border-radius: 30px;
+}
+
+pre > code {
+    font-family: "Sans Mono", "Consolas", "Courier", monospace;
+}
+
+@media (max-width: 600px) {
+
+    #text-holder {
+        width: 80%;
+    }
+
+    #code-img {
+        width: 90%;
+    }
+
+    #code-content {
+        width: 90%;
+        font-size: 9px;
+        border-radius: 20px;
+    }
 }
