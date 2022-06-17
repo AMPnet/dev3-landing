@@ -92,3 +92,7 @@ pre > code {
         border-radius: 20px;
     }
 }
+
+.hljs {
+    background: #151617!important;
+}
