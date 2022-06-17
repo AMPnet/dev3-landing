@@ -97,3 +97,16 @@ pre > code {
 .hljs {
     background: #151617!important;
 }
+
+#logos-holder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 270px;
+}
+
+#logos-holder img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
