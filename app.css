@@ -50,6 +50,7 @@ html {
     color: white;
     border-radius: 30px;
     width: 150px;
+    text-decoration: none;
     cursor: pointer;
     transition: all 0.3s;
 }
